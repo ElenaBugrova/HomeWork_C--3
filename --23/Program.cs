@@ -5,16 +5,12 @@
 Console.Clear();
 Console.Write("Введите N: ");
 int N = int.Parse(Console.ReadLine());
-int number = 1;
-int index=N;
-while (index>0)
-{
-    double d=Math.Pow(number,3);
-    index--;
-    number++;
-    Console.Write($"{d}," );
+int i=1;
+if (N<0){
+    i=N;
+N=-1;
 }
+for (; i<=N; i++)
 
+Console.Write($"{Math.Pow(i, 3)} " );
 
-//double d=Math.Pow(N,3);
-//Console.Write(d);
